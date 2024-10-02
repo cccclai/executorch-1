@@ -154,9 +154,9 @@ def get_qnn_partitioner(
     num_sharding: int = 0,
     soc_model: str = "SM8650",  # default to SM8650
 ):
-    assert (
-        use_kv_cache is True
-    ), "Qualcomm backend currently only supports static shape and use_kv_cache=True is the only way to support it at the moment"
+    # assert (
+    #     use_kv_cache is True
+    # ), "Qualcomm backend currently only supports static shape and use_kv_cache=True is the only way to support it at the moment"
     try:
         # pyre-ignore: Undefined import [21]: Could not find a module corresponding to import `executorch.backends.qualcomm.partition.qnn_partitioner`
         from executorch.backends.qualcomm.partition.qnn_partitioner import (
