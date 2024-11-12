@@ -37,6 +37,10 @@ case "${IMAGE_NAME}" in
     ARM_SDK=yes
     CLANG_VERSION=12
     ;;
+  executorch-ubuntu-22.04-qnn-sdk)
+    QNN_SDK=yes
+    CLANG_VERSION=12
+    ;;
   executorch-ubuntu-22.04-clang12-android)
     LINTRUNNER=""
     CLANG_VERSION=12
